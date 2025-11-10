@@ -1,5 +1,4 @@
 import { useState } from "react";
-import darkLogo from "../assets/images/logo-dark.svg";
 import lightLogo from "../assets/images/logo-light.svg";
 
 const Header = () => {
@@ -103,9 +102,9 @@ const Header = () => {
 
         {/*Button (desktop only) */}
         <div className="hidden lg:block">
-          <button className="text-white bg-linear-to-b  from-green-400 via-green-400 to-primary-green hover:bg-linear-to-br focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-            Request invite
-          </button>
+         <button className="bg-linear-to-bl from-primary-green to-primary-cyan text-white font-medium rounded-full text-sm px-8 py-3 w-fit mx-auto lg:mx-0 hover:opacity-90 transition sm:text-left sm:self-start">
+          Request Invite
+        </button>
         </div>
       </nav>
     </header>
