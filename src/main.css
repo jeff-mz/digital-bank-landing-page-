@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-font-display: "Public Sans", sans-serif;
+
+  --color-primary-blue: #39415e;
+  --color-primary-green: #34a853;
+  --color-primary-cyan: #2ab7f4;
+
+  --color-neutral-gray600: #999999;
+  --color-neutral-gray100: #f0f1f5;
+  --color-neutral-gray50: #fafafa;
+  --color-neutral-white: #ffffff;
+}
+body {
+  font-family: var(--font-sans);
+}
+@media screen and (max-width: 500px) {
+  .custom-bg {
+    background: url("./assets/images/bg-intro-mobile.svg") center center/cover
+      no-repeat;
+  }
+}
+@media screen and (min-width: 501px) {
+  .custom-bg {
+    position: absolute;
+    top: -300px;
+    z-index: -100;
+    background: url("./assets/images/bg-intro-desktop.svg") center center/cover
+      no-repeat;
+  }
+}
